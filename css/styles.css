@@ -43,6 +43,35 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
+@media screen and (min-width: 768px) {
+   .container { 
+    max-width: 768px;
+   } 
+}
+@media screen and (min-width: 1158px) {
+    .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+}
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    padding: 16px 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+}
 .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -100,6 +129,12 @@ img {
 }
 .adress-decoration {
     font-style: normal;
+    display: flex;
+}
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
+    .adress-decoration {
+        display: none;
+    }
 }
 .header-contacts {
     line-height: 1.5;
@@ -283,10 +318,20 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+@media only screen and (max-width: 767.68px) {
+    .header-inner {
+        display: block;
+    }
+}
 .navigation {
     display: flex;
     align-items: center;
     gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+    .navigation {
+        gap: 120px;
+    }
 }
  div {
     display: block;
@@ -298,10 +343,20 @@ img {
     line-height: 1.5em;
     letter-spacing: 0.02em;
 }
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
+    .body-navigation {
+        display: none;
+    }
+}
 .body-adress {
     display: flex;
     gap: 40px;
 }
+@media only screen and (min-width: 768px) {
+    .body-adress {
+        flex-direction: column;
+        gap: 12px;
+    }
 .ways-list {
     display: flex;
     gap: 24px;
