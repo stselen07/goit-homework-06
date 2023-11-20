@@ -102,6 +102,7 @@ img {
     text-decoration: none;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex-direction: row;
 }
 .header-contacts {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -351,12 +352,14 @@ img {
 .body-adress {
     display: flex;
     gap: 40px;
+    flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
     .body-adress {
-        flex-direction: column;
+        flex-direction: row;
         gap: 12px;
     }
+}
 .ways-list {
     display: flex;
     gap: 24px;
@@ -817,4 +820,90 @@ input::placeholder {
 .modal-button-send:focus {
     background-color: #404bbf;
     fill: #ffffff;
+}
+/* START Mob-menu */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 72px 16px 40px;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in;
+}
+.menu-container.is-open {
+    transform: translateX(0);
+}
+.mob-btn-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    min-width: 24px;
+    min-height: 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mob-icon-close {
+    margin-bottom: auto;
+}
+.mob-menu-list {
+    margin-bottom: auto;
+}
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+.mob-menu-link {
+    color: #2e2f42;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.mob-menu-link:focus {
+    color: #404bbf;
+}
+.mob-contacts {
+    margin-bottom: 48px;
+}
+.mob-contacts-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+.mob-contacts-link {
+    color: #434455;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.mob-contacts-link:focus {
+    color: #404bbf;
+}
+.mob-icon-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.mob-link-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+}
+.mob-icon-socials {
+    fill: #f4f4fd;
 }

@@ -108,7 +108,11 @@
             <h2 class="content-desc">Our Team</h2>
             <ul class="team-list">
                 <li class="third-list-class">
-                    <img src="./images/team/mark.jpg" width="264" alt="Mark Guerrero"/>
+                    <img
+                    srcset="./images/team/mark.jpg 1x, ./"
+                    src="./images/team/mark.jpg"
+                    width="264"
+                    alt="Mark Guerrero"/>
                     <div class="team-list-text">
                     <h3 class="sub-header-three">Mark Guerrero</h3>
                     <p class="sub-header-desk-three">Product Designer</p>
@@ -263,7 +267,13 @@
             <h2 class="portfolio-tittle">Our Portfolio</h2>
             <ul class="portfolio-list">
                 <li class="portfolio-item">
-                    <div class="portfolio-image">    
+                    <div class="portfolio-image">
+                        <picture>
+                            <source
+                            media="(min-width: 1168px )"
+                            srcset="./images/portfolio/banking-app-1.jpg  1x,
+                            "
+                        </picture>    
                     <img src="./images/portfolio/banking-app-1.jpg" width="360" alt="banking-app">
                     <p class="portfolio-discription">
                         14 Stylish and User-Friendly App Design Concepts · Task
@@ -476,6 +486,66 @@
             <button class="modal-button-send" type="submit">Send</button>
         </form>
     </div>
+</div>
+<!-- Mobal-Menu -->
+<div class="menu-container">
+    <button class="mob-btn-close">
+        <svg class="mob-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#mob-icon-close"></use>
+        </svg>
+    </button>
+
+    <ul class="mob-menu-list">
+        <li class="mob-menu-item">
+            <a class="mob-menu-link" href="#">Studio</a>
+        </li>
+        <li class="mob-menu-item">
+            <a class="mob-menu-link" href="#">Portfolio</a>
+        </li>
+        <li class="mob-menu-item">
+            <a class="mob-menu-link" href="#">Contacts</a>
+        </li>
+    </ul>
+
+    <ul class="mob-contacts">
+        <li class="mob-contacts-item">
+            <a class="mob-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mob-contacts-item">
+            <a class="mob-contacts-link" href="mailto:info@devstudio.com">mailto:info@devstudio.com</a>
+        </li>
+    </ul>
+
+    <ul class="mob-icon-list">
+        <li class="mob-icon-item">
+            <a class="mob-link-socials" href="#">
+                <svg class="mob-icon-socials" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="footer-item">
+            <a class="mob-link-socials" href="#">
+                <svg class="mob-icon-socials" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="footer-item">
+            <a class="mob-link-socials" href="#">
+                <svg class="mob-icon-socials" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="footer-item">
+            <a class="mob-link-socials" href="#">
+                <svg class="mob-icon-socials" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
 </div>
 </body> 
 </html>
