@@ -78,6 +78,8 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .logo {
+    /* display: inline-flex;
+      align-items: center; */
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -158,6 +160,14 @@ color: #404bbf;
     max-width: 496px;
     margin: 0 auto;
 }
+@media only screen and (min-width: 768px) {
+    .main-header {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        padding: 0;
+    }
+}
 .section-decoration {
     background-color: #2E2F42;
     padding: 188px 0;
@@ -167,9 +177,58 @@ color: #404bbf;
     background-position: center;
     background-size: cover;
 }
+@media only screen and (min-resolution: 192dpi) {
+    .section-decoration {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/mobile-bg@2x.jpg);
+    }
+}
+@media only screen and (min-width: 768px) {
+    .section-decoration {
+        max-width: 768px;
+        padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+                ),
+            url(../images/tablet-bg.jpg);
+    }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .section-decoration {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-bg@2x.jpg);
+    }
+}
+@media only screen and (min-width: 1158px) {
+    .section-decoration {
+        max-width: 1440px;
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office.jpg);
+    }
+}
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .section-decoration {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office\ 1@2x.jpg);
+    }
+}
 .section-decoration-ways {
     background-color: #FFFFFF;
-    padding: 120px 0;
+    padding: 96px 0;
+}
+@media screen and (min-width: 1158px) {
+    .section-decoration-ways {
+        padding: 120px 0;
+    }
 }
 .order-service-button {
     background-color: #4D5AE5;
@@ -210,6 +269,11 @@ color: #404bbf;
     color: #434455;
     font-size: 16px;
 }
+@media screen and (min-width: 1158px) {
+    .sub-header-desk {
+        font-weight: 400;
+    }
+}
 .sub-header {
     font-weight: 500;
     font-size: 20px;
@@ -221,6 +285,13 @@ color: #404bbf;
     margin-bottom: 8px;
     align-items: justify;
     text-align: justify;
+}
+@media screen and (min-width: 1158px) {
+    .sub-header {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
 }
 .sub-header-three {
      font-weight: 500;
@@ -237,6 +308,16 @@ color: #404bbf;
 .section-three-desc {
     background-color: #F4F4FD;   
     padding: 120px 0;
+}
+@media screen and (min-width: 768px) {
+    .section-three-desc {
+        padding: 96px 92px;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .section-three-desc {
+        padding: 120px 0;
+    }
 }
 .sub-header-desk-three {
     line-height: 1.5;
@@ -282,6 +363,18 @@ color: #404bbf;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08); 
+}
+@media only screen and (min-width: 768px) {
+    .third-list-class {
+        max-width: 264px;
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
+@media screen and (min-width: 1158px) {
+    .third-list-class {
+        flex-basis: calc((100% - 72px) / 4);
+        min-width: 264px;
+    }
 }
 .footer-desc {
     background-color: #2e2f42;
@@ -369,6 +462,28 @@ img {
     display: flex;
     gap: 24px;
 }
+@media screen and (min-width: 768px) {
+    .ways-list {
+        gap: 24px;
+    }
+}
+@media screen and (min-width: 1158px) {
+    .ways-list {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .ways-item-li {
+        display: flex;
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
+@media screen and (min-width: 1158px) {
+    .ways-item-li {
+        width: calc((100% - 72px) / 4);
+    }
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -387,6 +502,20 @@ img {
 .team-list {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+    .team-list {
+        align-items: center;
+        gap: 64px 24px;
+    }
+}
+@media only screen and (min-width: 1158px) {
+    .team-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
 }
 .team-list-text {
     padding: 32px 0;
@@ -481,6 +610,11 @@ img {
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
+}
+@media screen and (min-width: 1158px) {
+    .advantages-icon {
+        display: flex;
+    }
 }
 .card-list {
     display: flex;
@@ -948,8 +1082,6 @@ input::placeholder {
     transition: transform 250ms ease-in;
     display: flex;
     flex-direction: column;
-}
-.menu-container {
     transform: translateX(0);
 }
 .mob-btn-close {
