@@ -10,7 +10,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
+  
 </head>
 
 <body> 
@@ -19,11 +21,7 @@
         <nav class="navigation">
             <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span>
             </a>
-            <button class="menu-btn">
-                <svg class="icon-mob-menu" width="24" height="24">
-                    <use href="./images/icons.svg#icon-menu"></use>
-                </svg>
-            </button>
+         
             <ul class="body-navigation">
                 <li class="header-item">
                   <a class="header-list header-list-first" href="./index.html">Studio</a>
@@ -36,6 +34,11 @@
                 </li>
             </ul>
         </nav>
+           <button class="menu-btn">
+                <svg class="icon-mob-menu" width="24" height="24">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         <address class="adress-decoration">
             <ul class="body-adress">
                 <li> <a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
@@ -52,7 +55,7 @@
             <button class="order-service-button" type="button">Order Service</button>
             </div>
         </section>
-        <section class="section-decoration-ways">
+       <section class="section-decoration-ways">
             <div class="container">    
             <h2 class="visually-hidden">Ways to achieve the goal</h2>
             <ul class="ways-list">
@@ -102,8 +105,8 @@
                 </li>
             </ul>
             </div>
-        </section>
-        <section class="section-three-desc">
+        </section> 
+         <section class="section-three-desc">
             <div class="container">     
             <h2 class="content-desc">Our Team</h2>
             <ul class="team-list">
@@ -280,8 +283,8 @@
                 </li>
              </ul>
              </div>
-        </section>
-        <section class="section-portfolio">
+        </section> 
+      <section class="section-portfolio">
             <div class="container"> 
             <h2 class="portfolio-tittle">Our Portfolio</h2>
             <ul class="portfolio-list">
@@ -289,7 +292,7 @@
                     <div class="portfolio-image">
                         <picture>
                             <source
-                            media="(min-width: 1168px )"
+                            media="(min-width: 1158px )"
                             srcset="./images/portfolio/banking-app-1.jpg  1x,
                             ./images/portfolio/bankind-desk@2x.jpg 2x"
                             />
@@ -325,8 +328,8 @@
                     <div class="portfolio-image">
                         <picture>
                             <source
-                            media="(min-width: 1168px )"
-                            srcset="./images/portfolio/cashless-payment.jpg.  1x,
+                            media="(min-width: 1158px )"
+                            srcset="./images/portfolio/cashless-payment.jpg  1x,
                             ./images/portfolio/cashless-tab@2x.jpg 2x"
                             />
                             <source
@@ -362,7 +365,7 @@
                     <div class="portfolio-image"> 
                         <picture>
                             <source
-                            media="(min-width: 1168px )"
+                            media="(min-width: 1158px )"
                             srcset="./images/portfolio/meditation-app.jpg  1x,
                             ./images/portfolio/meditation-app@2x.jpg 2x"
                             />
@@ -378,7 +381,7 @@
                             />
                             <img 
                             class="portfolio-photo"
-                            src="./images/portfolio/meditation-app.jpg"
+                            src=.images/portfolio/meditation-app.jpg
                             alt="Meditation App"
                             width="360"
                             height="300"
@@ -399,7 +402,7 @@
                     <div class="portfolio-image">
                         <picture>
                             <source
-                            media="(min-width: 1168px )"
+                            media="(min-width: 1158px )"
                             srcset="./images/portfolio/taxi-service.jpg  1x,
                             ./images/portfolio/img@2x.jpg 2x"
                             />
@@ -411,7 +414,7 @@
                             <source
                             media="(max-width: 767.98px)"
                             srcset="./images/portfolio/taxi-mob.jpg  1x,
-                            ./images/portfolio/taxi-mob@2x.jpg 2x"
+                            ./images/portfolio/taxi-mo@2x.jpg 2x"
                             />
                             <img
                             class="portfolio-photo"
@@ -436,7 +439,7 @@
                     <div class="portfolio-image">
                         <picture>
                             <source
-                            media="(min-width: 1168px )"
+                            media="(min-width: 1158px )"
                             srcset="./images/portfolio/screen-illustrations.jpg  1x,
                             ./images/portfolio/screen@2x.jpg 2x"
                             />
@@ -473,14 +476,14 @@
                     <div class="portfolio-image">
                         <picture>
                             <source
-                            media="(min-width: 1168px )"
+                            media="(min-width: 1158px )"
                             srcset="./images/portfolio/online-courses.jpg  1x,
                             ./images/portfolio/online@2x.jpg 2x"
                             />
                             <source
                             media="(min-width: 768px)"
                             srcset="./images/portfolio/online-tab.jpg  1x,
-                            ./images/portfolio/online-tab@2x 2x"
+                            ./images/portfolio/online-tab@2x.jpg 2x"
                             />
                             <source
                             media="(max-width: 767.98px)"
@@ -508,14 +511,14 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> 
 
     </main>
 <footer class="footer-desc">
     <div class="container footer-content">
     <div class="footer-advice">  
     <a class="main-logo" href="./index.html">
-        Web <span class="logo-second-footer">Studio</span>
+        Web<span class="logo-second-footer">Studio</span>
     </a>
     <p class="advice">
         Increase the flow of customers and sales for your business with
@@ -570,9 +573,9 @@
                 </form>
             </div>
     </div>
-</footer>
+</footer> 
 
-<div class="backdrop">
+<div class="backdrop ">
     <div class="modal">
         <button class="button-close" type="button">
             <svg class="icon-close" height="8" width="8">
@@ -638,16 +641,16 @@
     </div>
 </div>
 <!-- Mobal-Menu -->
-<div class="menu-container is-hiden">
+<div class="menu-container "> 
     <button class="mob-btn-close">
         <svg class="mob-icon-close" width="8" height="8">
-            <use href="./images/icons.svg#mob-icon-close"></use>
+            <use href="./images/icons.svg#icon-close"></use>
         </svg>
     </button>
 
     <ul class="mob-menu-list ">
         <li class="mob-menu-item">
-            <a class="mob-menu-link" href="#">Studio</a>
+            <a class="mob-menu-link mob-current-link" href="#">Studio</a>
         </li>
         <li class="mob-menu-item">
             <a class="mob-menu-link" href="#">Portfolio</a>
@@ -659,10 +662,10 @@
 
     <ul class="mob-contacts">
         <li class="mob-contacts-item">
-            <a class="mob-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <a class="mob-contacts-link mob-current-contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
         </li>
         <li class="mob-contacts-item">
-            <a class="mob-contacts-link" href="mailto:info@devstudio.com">mailto:info@devstudio.com</a>
+            <a class="mob-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
     </ul>
 
@@ -697,5 +700,6 @@
         </li>
     </ul>
 </div>
+
 </body> 
 </html>

@@ -1,0 +1,92 @@
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-contacts {
+    font-size: 16px;
+  }
+  .body-adress {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .navigation {
+    gap: 76px;
+  }
+  .section-decoration {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  .main-header {
+   
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+    screen and (min-resolution: 192dpi) and (min-width: 1158px),
+    screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+    .section-decoration {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office@2x.jpg);
+    }
+  }
+  .section-decoration-ways {
+      padding: 120px 0;
+  }
+   .ways-item-li {
+       width: calc((100% - 72px) / 4);
+   }
+   .advantages-icon {
+    display: flex;
+   }
+   .sub-header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+   }
+   .sub-header-desk {
+       font-weight: 400;
+   }
+   .section-three-desc {
+       padding: 120px 0;
+   }
+        .team-list {
+            flex-wrap: nowrap;
+            gap: 24px;
+        }
+                .section-portfolio {
+                    padding-top: 120px;
+                    padding-bottom: 120px;
+        
+                }
+ .portfolio-list {
+     gap: 48px 24px;
+ }
+  .portfolio-item {
+      width: calc((100% - 48px) / 3);
+  }
+  .footer-desc {
+
+      padding: 100px 0;
+
+  }
+  .footer-content{
+    gap: unset;
+  }
+   .footer-advice{
+    margin-right: 120px;
+   }
+   .footer-input{
+    margin-left: auto;
+   }
+}

@@ -1,0 +1,88 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+   .menu-container {
+       display: none;
+   }
+  .body-adress {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .section-decoration {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-bg.jpg);
+  }
+
+  .main-header {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .section-decoration {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-bg@2x.jpg);
+    }
+  }
+  .ways-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .ways-item-li {
+    width: calc((100% - 24px) / 2);
+  }
+  .sub-header {
+    text-align: left;
+  }
+  .team-list {
+    align-items: center;
+    gap: 64px 24px;
+  }
+  .portfolio-list {
+    gap: 72px 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .footer-content{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    align-items: baseline;
+    padding-left: 108px;
+  }
+  .main-logo{
+    text-align: left;
+  }
+  .footer-media {
+text-align: left;
+  }
+  .modal-tittle-footer{
+    text-align: left;
+  }
+.subscribe-form{
+flex-direction: row;
+}
+  .modal {
+      width: 408px;
+      padding: 72px 25px 23px 24px;
+  }
+ 
+}
